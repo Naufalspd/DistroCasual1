@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pemesanan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+  <h2>Distro Casual</h2>
+
+ <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tentang.html">Tentang</a></li>
+    <li><a href="pemesanan.html">Pemesanan</a></li>
+    <li><a href="kontak.html">Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- (paste navbar di sini) -->
+
+<h2 class="judul">Pilih Produk</h2>
+
+<div class="produk-container">
+  <div class="produk">
+    <img src="KS.jpg">
+    <h4>Kaos Streetwear</h4>
+    <p>Rp120.000</p>
+    <button onclick="tambahKeranjang('Kaos Streetwear',120000)">Tambah</button>
+  </div>
+
+  <div class="produk">
+    <img src="HC.jpg">
+    <h4>Hoodie Premium</h4>
+    <p>Rp250.000</p>
+    <button onclick="tambahKeranjang('Hoodie Premium',250000)">Tambah</button>
+  </div>
+
+  <div class="produk">
+    <img src="KC.jpg">
+    <h4>Kemeja Distro</h4>
+    <p>Rp180.000</p>
+    <button onclick="tambahKeranjang('Kemeja Distro',180000)">Tambah</button>
+  </div>
+
+  <div class="produk">
+    <img src="JC.jpg">
+    <h4>Jaket Casual</h4>
+    <p>Rp300.000</p>
+    <button onclick="tambahKeranjang('Jaket Casual',300000)">Tambah</button>
+  </div>
+
+  <div class="produk">
+    <img src="KO.jpg">
+    <h4>Kaos Oversize</h4>
+    <p>Rp150.000</p>
+    <button onclick="tambahKeranjang('Kaos Oversize',150000)">Tambah</button>
+  </div>
+</div>
+
+<h2 class="judul">Keranjang</h2>
+<div id="keranjang"></div>
+
+<button class="checkout" onclick="checkoutWA()">Checkout WhatsApp</button>
+
+<div class="social-bar">
+  <a href="https://wa.me/6281234567890" target="_blank">
+    <img src="WA.png">
+  </a>
+  <a href="https://instagram.com/distrocasual" target="_blank">
+    <img src="IG.png">
+  </a>
+  <a href="https://twitter.com/distrocasual" target="_blank">
+    <img src="TW.png">
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

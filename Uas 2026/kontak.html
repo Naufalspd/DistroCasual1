@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+  <h2>Distro Casual</h2>
+
+ <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tentang.html">Tentang</a></li>
+    <li><a href="pemesanan.html">Pemesanan</a></li>
+    <li><a href="kontak.html">Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- (navbar di sini) -->
+
+<section class="kontak">
+  <h2>Kontak Kami</h2>
+
+  <div class="kontak-wrapper">
+    <!-- INFO KONTAK -->
+    <div class="kontak-info">
+
+      <iframe 
+        src="https://www.google.com/maps?q=Bogor&output=embed"
+        width="100%" height="200" style="border:0;">
+      </iframe>
+    </div>
+
+    <!-- FORM KONTAK -->
+    <form class="kontak-form" onsubmit="kirimPesan(event)">
+      <input type="text" id="nama" placeholder="Nama" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="pesan" placeholder="Pesan" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+      <p id="status" class="status"></p>
+    </form>
+  </div>
+</section>
+
+<div class="social-bar">
+  <a href="https://wa.me/6281234567890" target="_blank">
+    <img src="WA.png">
+  </a>
+  <a href="https://instagram.com/distrocasual" target="_blank">
+    <img src="IG.png">
+  </a>
+  <a href="https://twitter.com/distrocasual" target="_blank">
+    <img src="TW.png">
+  </a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
